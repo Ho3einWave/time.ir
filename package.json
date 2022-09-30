@@ -1,6 +1,6 @@
 {
   "name": "time.ir-private-api",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "time.ir Mobile Private Api package",
   "main": "src/index.js",
   "scripts": {
