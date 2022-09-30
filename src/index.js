@@ -1,4 +1,4 @@
-const { endpoint, apiver } = require("./core/constants")
+const { domain, apiver } = require("./core/constants")
 const axios = require("axios").default
 
 
@@ -6,7 +6,7 @@ const axios = require("axios").default
 class Client {
     constructor() {
         this.version = apiver
-        this.endpoint = `${endpoint}/${this.version}`
+        this.endpoint = `${domain}/${this.version}`
         this.apikey = "97qVHZFLxxyQajE8cZhUMmgxQSZF259e" // they hard coded api key in the app XD [api key is same in every device]
 
     }
@@ -46,6 +46,26 @@ class Client {
 
 
     }
+
+    async getCities() {
+        const country = 78 // coutries code is not documented for now we use iran
+        const endPointURL = `${this.endpoint}/sitemember/fa/countries/${country}/provinceswithcities?rankings=1%2C2`
+        const headers = {
+            "x-api-key": this.apikey
+        }
+
+        const data = await axios.get(endPointURL, {
+            headers: headers
+        }).then(data => data.data).catch(e => {
+            return {
+                "error": true,
+                "message": ".مشکلی در دریافت اطلاعات پیش امد"
+            }
+        })
+        return data
+
+    }
+
 }
 
 module.exports = Client

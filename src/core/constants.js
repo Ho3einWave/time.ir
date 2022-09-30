@@ -1,8 +1,8 @@
-const endpoint = "https://api.time.ir"
+const domain = "https://api.time.ir"
 const apiver = "v1"
 
 
 module.exports = {
-    endpoint,
+    domain,
     apiver
 }
