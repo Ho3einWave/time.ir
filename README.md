@@ -2,7 +2,7 @@
 a lighweith module to work with time.ir private api
 
 
-##TODO's
+## TODO's
 
 - [X] method to get cities for religious times
 - [ ] get city religious times by id
@@ -10,7 +10,7 @@ a lighweith module to work with time.ir private api
 - [ ] convert time to other base's
 - [ ] a documention and examples
 
-##Usage
+## Usage
 1. install with npm
 ```bash
 npm i time.ir-private-api
