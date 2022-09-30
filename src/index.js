@@ -7,7 +7,7 @@ class Client {
     constructor() {
         this.version = apiver
         this.endpoint = `${endpoint}/${this.version}`
-        this.apikey = "97qVHZFLxxyQajE8cZhUMmgxQSZF259e"
+        this.apikey = "97qVHZFLxxyQajE8cZhUMmgxQSZF259e" // they hard coded api key in the app XD [api key is same in every device]
 
     }
 
