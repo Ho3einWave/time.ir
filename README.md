@@ -1,5 +1,5 @@
 # Time.ir Mobile App Private Api
-a lighweith module to work with time.ir private api
+a lightweight module to work with time.ir private api
 
 
 ## TODO's
